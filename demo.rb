@@ -1,0 +1,16 @@
+require './trie.rb'
+
+tree = Trie.new
+tree.add_element '1234', 'Hello world!'
+puts 'Try to find by key "test":'
+puts tree.get_element 'test'
+puts '==================='
+puts 'Try to find by key "123":'
+puts tree.get_element '123'
+puts '==================='
+puts 'Try to find by key "1234":'
+puts tree.get_element '1234'
+puts '==================='
+tree.delete_element '1234'
+puts 'Try to find by key "1234":'
+puts tree.get_element '1234'
